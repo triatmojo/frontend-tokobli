@@ -5,6 +5,9 @@
 @import "fonts";
 
 
+@import "pages/home";
+@import "pages/details";
+@import "transitions/slide-fade";
 @import "component/categories";
 @import "component/products";
-@import "pages/home";
+@import "component/breadcrumb";

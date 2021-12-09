@@ -10894,6 +10894,74 @@ footer p .footer-logo:hover {
   transition: background-color 200ms linear;
 }
 
+.page-home h5 {
+  font-weight: 300;
+}
+
+.page-home .store-trend-categories {
+  margin-top: 30px;
+}
+
+.page-home .store-new-product {
+  margin-top: 16px;
+}
+
+.footer {
+  margin-top: 70px;
+}
+
+.page-details .store-galleries {
+  margin-top: 20px;
+}
+
+.page-details .main-image {
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-details img {
+  border-radius: 10px;
+}
+
+.page-details .thumbnail-image {
+  margin-top: 0;
+  margin-bottom: 20px;
+  border: 2px solid transparent;
+  width: 100%;
+  max-height: 85px;
+}
+
+@media (max-width: 991.98px) {
+  .page-details .thumbnail-image {
+    width: 100%;
+    height: 85px;
+  }
+}
+
+.page-details .thumbnail-image:hover, .page-details .thumbnail-image.active {
+  border: 2px solid #ff7158;
+}
+
+.slide-fade-enter-active {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.slide-fade-leave-active {
+  -webkit-transition: all 0.1s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  opacity: 0.5;
+}
+
 .component-categories {
   background: #f4f4f4;
   border-radius: 8px;
@@ -10964,19 +11032,24 @@ footer p .footer-logo:hover {
   font-size: 16px;
 }
 
-.page-home h5 {
-  font-weight: 300;
+.store-breadcrumbs .breadcrumb {
+  background: transparent;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.page-home .store-trend-categories {
-  margin-top: 30px;
+.store-breadcrumbs .breadcrumb-item + .breadcrumb-item::before {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-.page-home .store-new-product {
-  margin-top: 16px;
+.store-breadcrumbs .breadcrumb-item.active {
+  color: #0C0D36;
 }
 
-.footer {
-  margin-top: 70px;
+.store-breadcrumbs a {
+  text-decoration: none;
+  color: #979797;
 }
 /*# sourceMappingURL=main.css.map */
