@@ -35,7 +35,7 @@
                     <li class="nav-item">
                         <a href="/index.html" class="nav-link">Home</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="/categories.html" class="nav-link">Categories</a>
                     </li>
                     <li class="nav-item">
@@ -101,10 +101,10 @@
             </div>
         </section>
 
-        <section class="store-galleries" id="gallery">
+        <section class="store-galleries" id="gallery" data-aos="fade-up">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8" data-aos="zoom-in">
                         <transition name="slide-fade" mode="out-in">
                             <img :src="photos[activePhoto].url" :key="photos[activePhoto].id" class="w-100 main-image"
                                 alt="">
@@ -126,6 +126,84 @@
             </div>
         </section>
 
+        <div class="store-details-container" data-aos="fade-up" data-aos-delay="100">
+            <section class="store-heading">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h1>Apple Watch Series 4 40mm - black</h1>
+                            <div class="owner">By Galih Pratama</div>
+                            <div class="price">Rp. 1.000.000</div>
+                        </div>
+                        <div class="col-lg-2" data-aos="zoom-in">
+                            <a href="/carts.html" class="btn btn-success text-white px-4 btn-block mb-3">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="store-description">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <p>Kondisi: Baru <br>
+                                Berat: 1 Kilogram <br>
+                                Kategori: Smart Watch <br>
+                                Etalase: All Product 5 <br>
+                            </p>
+                            <p>
+                                KENAPA HARUS BELI SAMA Choco Apple?<br>
+                                1. TRUSTED SELLER
+                                bukan cuma seller musiman yang setelah barang jualannya laku trus menghilang entah
+                                kemana.<br>
+                                2. BARANG DIJAMIN BRAND NEW IN BOX + SEGEL<br>
+                                3. MENERIMA TRANSAKSI VIA TOKOPEDIA<br>
+                                4. CLAIM GARANSI KAMI BANTU<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="store-review" data-aos="fade-up">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 mt-3 mb-3">
+                            <h5>Review Product (3)</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <ul class="list-unstyled">
+                                <li class="media">
+                                    <img src="/images/icons/pic.png" class="rounded-circle mr-3" alt="">
+                                    <div class="media-body">
+                                        <h5 class="mt-2 mb-1">Anonymous</h5>
+                                        Barang original dan sampai thx
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <img src="/images/icons/pic-1.png" class="rounded-circle mr-3" alt="">
+                                    <div class="media-body">
+                                        <h5 class="mt-2 mb-1">Raihan</h5>
+                                        Tidak mengecawakan puassss pokoknya
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <img src="/images/icons/pic-2.png" class="rounded-circle mr-3" alt="">
+                                    <div class="media-body">
+                                        <h5 class="mt-2 mb-1">Muthia Fadlan</h5>
+                                        Seller cepet response dan tidak mengecewakan puass pokoknya
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
     </div>
 
 
@@ -143,9 +221,7 @@
     <script src="vendor/jquery/jquery.slim.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+
     <script src="vendor/vue/vue.js"></script>
     <script>
         var gallery = new Vue({

@@ -1,6 +1,7 @@
 .page-details {
     .store-galleries {
         margin-top: 20px;
+
     }
 
     .main-image {
@@ -34,6 +35,66 @@
         }
     }
 
+    .store-details-container {
+        margin-top: 10px;
 
+        .store-heading {
+            margin-bottom: 20px;
 
+            h1 {
+                color: #0c0d36;
+                font-weight: normal;
+                font-size: 24px;
+            }
+
+            .owner {
+                color: #979797;
+                font-weight: normal;
+                font-size: 14px;
+            }
+
+            .price {
+                margin-top: 5px;
+                color: #FF7158;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 21px;
+                margin-bottom: 10px;
+            }
+
+        }
+
+        .store-description {
+            color: #525252;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        .store-review {
+
+            .media {
+                img {
+                    margin-bottom: 20px;
+                    max-width: 50px;
+                }
+
+                .media-body {
+                    color: #525252;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 108%;
+                    margin-bottom: 20px;
+                }
+            }
+
+            h5 {
+                color: #0C0D36;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 108%;
+            }
+
+        }
+
+    }
 }
