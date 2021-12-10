@@ -9,11 +9,13 @@
             font-size: 16px;
             color: #0C0D36;
         }
+
+        .cart-image {
+            max-height: 85px;
+            border-radius: 8px;
+        }
     }
 
-    .cart-image {
-        max-height: 85px;
-    }
 
     .product-title {
         font-size: 18px;
