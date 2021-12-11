@@ -11072,6 +11072,38 @@ footer p .footer-logo:hover {
   border-color: rgba(0, 0, 0, 0);
 }
 
+.page-auth .row-login {
+  min-height: 70vh;
+}
+
+.page-auth .row-register {
+  min-height: 70vh;
+}
+
+.page-auth h2 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #0c0d36;
+}
+
+.page-auth .form-control {
+  border-radius: 8px;
+  background-color: #f3f3f3;
+}
+
+.page-auth .btn-signup {
+  color: #212529;
+  background-color: #f3f3f3;
+  border-color: transparent;
+  color: #bbb;
+}
+
+.page-auth .btn-signup:hover {
+  color: #212529;
+  background-color: #e0e0e0;
+  border-color: rgba(0, 0, 0, 0);
+}
+
 .slide-fade-enter-active {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
