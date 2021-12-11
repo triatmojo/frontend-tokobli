@@ -11052,9 +11052,10 @@ footer p .footer-logo:hover {
   min-height: 70vh;
 }
 
-.page-success h2 {
+.page-success .section-success h2 {
   font-size: 28px;
   color: #0c0d36;
+  font-weight: 200;
   margin-top: 20px;
 }
 

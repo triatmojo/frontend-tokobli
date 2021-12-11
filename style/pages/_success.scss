@@ -3,10 +3,13 @@
         min-height: 70vh;
     }
 
-    h2 {
-        font-size: 28px;
-        color: #0c0d36;
-        margin-top: 20px;
+    .section-success {
+        h2 {
+            font-size: 28px;
+            color: #0c0d36;
+            font-weight: 200;
+            margin-top: 20px;
+        }
     }
 
     .btn-signup {
