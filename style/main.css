@@ -10850,6 +10850,14 @@ footer p .footer-logo:hover {
   background-color: #F3F3F3;
 }
 
+.form-control.is-valid {
+  background-image: none;
+}
+
+.form-control.is-invalid {
+  background-image: none;
+}
+
 .navbar-store {
   padding-top: 25px;
 }

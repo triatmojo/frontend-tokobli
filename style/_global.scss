@@ -4,6 +4,7 @@ body {
 
 .page-content {
     margin-top: 100px;
+
 }
 
 footer {
@@ -28,7 +29,15 @@ footer {
 }
 
 // Field Input
-
 .form-control {
     background-color: #F3F3F3;
+
+}
+
+.form-control.is-valid {
+    background-image: none;
+}
+
+.form-control.is-invalid {
+    background-image: none;
 }
