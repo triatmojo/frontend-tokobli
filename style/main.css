@@ -11112,6 +11112,106 @@ footer p .footer-logo:hover {
   border-color: rgba(0, 0, 0, 0);
 }
 
+.page-dashboard #page-content-wrapper {
+  background: #F5F5FB;
+  min-width: 100vw;
+}
+
+.page-dashboard #sidebar-wrapper {
+  margin-top: 60px;
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+.page-dashboard #sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+.page-dashboard #sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+.page-dashboard #wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+.page-dashboard .navbar-store {
+  margin-top: 0;
+  background-color: #f5f5fb;
+  -webkit-box-shadow: 0px 4px 5px #cacad1;
+          box-shadow: 0px 4px 5px #cacad1;
+}
+
+@media (min-width: 768px) {
+  .page-dashboard .navbar-store {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.page-dashboard .list-group-item {
+  border: 0;
+  font-size: 16px;
+  color: #0C0D36;
+}
+
+.page-dashboard .list-group-item.active {
+  background: -webkit-gradient(linear, right top, left top, color-stop(2%, rgba(255, 113, 88, 0.32)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, rgba(255, 113, 88, 0.32) 2%, rgba(255, 255, 255, 0) 100%);
+  border-right: 4px solid #ff7158;
+  color: #0C0D36;
+}
+
+@media (min-width: 768px) {
+  .page-dashboard #sidebar-wrapper {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .page-dashboard #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  .page-dashboard #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+.page-dashboard .section-content {
+  margin-top: 100px;
+}
+
+@media (min-width: 768px) {
+  .page-dashboard .section-content {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+.page-dashboard .section-content h5 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #0c0d36;
+}
+
+.page-dashboard .section-content .dashboard-title {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 36px;
+  color: #0c0d36;
+}
+
+.page-dashboard .section-content .dashboard-subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9191A9;
+}
+
 .slide-fade-enter-active {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -11219,5 +11319,41 @@ footer p .footer-logo:hover {
 .store-breadcrumbs a {
   text-decoration: none;
   color: #979797;
+}
+
+.card {
+  background: #fefefe;
+  -webkit-box-shadow: 0px 4px 15px #F1F1F8;
+          box-shadow: 0px 4px 15px #F1F1F8;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none !important;
+}
+
+.card .dashboard-card-title {
+  font-size: 16px;
+  color: #c5c5c5;
+}
+
+.card .dashboard-card-subtitle {
+  font-size: 32px;
+  font-weight: 600;
+  color: #0c0d36;
+}
+
+.card-list {
+  margin-bottom: 10px;
+}
+
+.card-list .card-body {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 27px;
+  color: #0c0d36;
+}
+
+.card-list .card-body img {
+  width: 44px;
+  min-height: 44px;
 }
 /*# sourceMappingURL=main.css.map */
