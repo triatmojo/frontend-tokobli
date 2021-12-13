@@ -28,8 +28,11 @@
                     <a href="/dashboard-product.html" class="list-group-item list-group-item-action">
                         My Products
                     </a>
-                    <a href="/dashboard-transaction.html" class="list-group-item list-group-item-action">
+                    <a href="/dashboard-transactions.html" class="list-group-item list-group-item-action">
                         Transactions
+                    </a>
+                    <a href="/dashboard-settings.html" class="list-group-item list-group-item-action">
+                        Store Settings
                     </a>
                     <a href="/dashboard-account.html" class="list-group-item list-group-item-action">
                         My Account
@@ -102,7 +105,7 @@
                                     <div class="card mb-2">
                                         <div class="card-body">
                                             <div class="dashboard-card-title">Customer</div>
-                                            <div class="dashboard-card-subtitle">10,209</div>
+                                            <div class="dashboard-card-subtitle">15,209</div>
                                         </div>
                                     </div>
                                 </div>
@@ -126,7 +129,7 @@
                             <div class="row mt-3">
                                 <div class="col-12 mt-2">
                                     <h5 class="mb-3">Recent Transactions</h5>
-                                    <a href="/dasboard-transactions-details.html" class="card card-list d-block">
+                                    <a href="/dashboard-transactions-details.html" class="card card-list d-block">
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-md-1">
@@ -141,7 +144,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="/dasboard-transactions-details.html" class="card card-list d-block">
+                                    <a href="/dashboard-transactions-details.html" class="card card-list d-block">
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-md-1">
@@ -156,7 +159,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="/dasboard-transactions-details.html" class="card card-list d-block">
+                                    <a href="/dashboard-transactions-details.html" class="card card-list d-block">
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-md-1">
@@ -193,6 +196,11 @@
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
         });
+
+        $(".list-group-item").click(function () {
+            $('a').removeClass("active");
+            $(this).addClass("active");
+        })
     </script>
     <script src="script/navbar-scroll.js"></script>
 </body>
