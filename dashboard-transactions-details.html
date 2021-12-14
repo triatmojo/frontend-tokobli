@@ -96,10 +96,19 @@
                 <div class="section-content section-dashboard-home" data-aos="fade-up">
                     <div class="container-fluid">
                         <div class="dashboard-heading">
-                            <h2 class="dashboard-title">Dashboard</h2>
-                            <p class="dashboard-subtitle">Look what you have made today!</p>
+                            <h2 class="dashboard-title">#STORE0897</h2>
+                            <div class="store-breadcrumbs">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="/dashboard-transactions.html">
+                                            Transactions
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumb-item active">Details</li>
+                                </ol>
+                            </div>
                         </div>
-                        <div id="transactionsDetails" class="dashboard-content">
+                        <div id="transactionDetails" class="dashboard-content">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="card">
@@ -111,102 +120,110 @@
                                                 <div class="col-12 col-md-8">
                                                     <div class="row">
                                                         <div class="col-12 col-md-6">
-                                                            <div class="product-title">Customer</div>
-                                                            <div class="product-subtitle">Tri Atmojo</div>
+                                                            <div class="transaction-detail-title">Customer</div>
+                                                            <div class="transaction-detail-subtitle">Tri Atmojo</div>
                                                         </div>
                                                         <div class="col-12 col-md-6">
-                                                            <div class="product-title">Product Name</div>
-                                                            <div class="product-subtitle">Fimi X8 Mini Drone</div>
+                                                            <div class="transaction-detail-title">Product Name</div>
+                                                            <div class="transaction-detail-subtitle">Fimi X8 Mini Drone
+                                                            </div>
                                                         </div>
                                                         <div class="col-12 col-md-6">
-                                                            <div class="product-title">Date of Transactions</div>
-                                                            <div class="product-subtitle">18 Desember, 2021</div>
+                                                            <div class="transaction-detail-title">Date of Transactions
+                                                            </div>
+                                                            <div class="transaction-detail-subtitle">18 Desember, 2021
+                                                            </div>
                                                         </div>
                                                         <div class="col-12 col-md-6">
-                                                            <div class="product-title">Status</div>
-                                                            <div class="product-subtitle">SHIPPING</div>
+                                                            <div class="transaction-detail-title">Status</div>
+                                                            <div class="transaction-detail-subtitle text-danger">
+                                                                {{ status }}</div>
+
                                                         </div>
                                                         <div class="col-12 col-md-6">
-                                                            <div class="product-title">Total Amount</div>
-                                                            <div class="product-subtitle">Rp. 1,000,000</div>
+                                                            <div class="transaction-detail-title">Total Amount</div>
+                                                            <div class="transaction-detail-subtitle">Rp. 1,000,000
+                                                            </div>
                                                         </div>
                                                         <div class="col-12 col-md-6">
-                                                            <div class="product-title">Mobile</div>
-                                                            <div class="product-subtitle">+628 3010 2020</div>
+                                                            <div class="transaction-detail-title">Mobile</div>
+                                                            <div class="transaction-detail-subtitle">+628 3010 2020
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-12 mt-4">
-                                                    <h5>Shipping Informations</h5>
-                                                    <div class="row">
-                                                        <div class="col-12 col-md-6">
-                                                            <div class="product-title">Address 1</div>
-                                                            <div class="product-subtitle">
-                                                                Garden at Candi Sawangan
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6">
-                                                            <div class="product-title">Address 2</div>
-                                                            <div class="product-subtitle">
-                                                                Blok B2 No. 34
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6">
-                                                            <div class="product-title">Province</div>
-                                                            <div class="product-subtitle">
-                                                                Jawa Barat
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6">
-                                                            <div class="product-title">City</div>
-                                                            <div class="product-subtitle">
-                                                                Depok
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6">
-                                                            <div class="product-title">Postal Code</div>
-                                                            <div class="product-subtitle">
-                                                                16320
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6">
-                                                            <div class="product-title">Country</div>
-                                                            <div class="product-subtitle">
-                                                                Indonesia
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="row">
-                                                                <div class="col-md-3">
-                                                                    <div class="form-group">
-                                                                        <label for="status">Status</label>
-                                                                        <select name="status" id="status"
-                                                                            class="form-control">
-                                                                            <option value="SHPPING">Shipping</option>
-                                                                            <option value="PROSES">Pending</option>
-                                                                            <option value="SUCCESS">Success</option>
-                                                                            <option value="UNPAID">Unpaid</option>
-                                                                        </select>
-                                                                    </div>
+                                                    <div class="col-12">
+                                                        <h5>Shipping Informations</h5>
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="transaction-detail-title">Address 1</div>
+                                                                <div class="transaction-detail-subtitle">
+                                                                    Garden at Candi Sawangan
                                                                 </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="transaction-detail-title">Address 2</div>
+                                                                <div class="transaction-detail-subtitle">
+                                                                    Blok B2 No. 34
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="transaction-detail-title">Province</div>
+                                                                <div class="transaction-detail-subtitle">
+                                                                    Jawa Barat
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="transaction-detail-title">City</div>
+                                                                <div class="transaction-detail-subtitle">
+                                                                    Depok
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="transaction-detail-title">Postal Code</div>
+                                                                <div class="transaction-detail-subtitle">
+                                                                    16320
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="transaction-detail-title">Country</div>
+                                                                <div class="transaction-detail-subtitle">
+                                                                    Indonesia
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-3">
+                                                                <div class="transaction-detail-title">Status</div>
+                                                                <select name="status" id="status" class="form-control"
+                                                                    v-model="status">
+                                                                    <option value="UNPAID">Unpaid</option>
+                                                                    <option value="PENDING">Pending</option>
+                                                                    <option value="SHIPPING">Shipping</option>
+                                                                    <option value="SUCCESS">Success</option>
+                                                                </select>
+                                                            </div>
+                                                            <template v-if="status == 'SHIPPING'">
                                                                 <div class="col-md-3">
-                                                                    <div class="form-group">
-                                                                        <label for="resi">Nomor Resi</label>
-                                                                        <input type="text" class="form-control"
-                                                                            id="status" name="resi" id="openStoreTrue"
-                                                                            value="BGR121102930">
+                                                                    <div class="transaction-detail-title">Input Resi
                                                                     </div>
+                                                                    <input type="text" name="resi" id="resi"
+                                                                        class="form-control" v-model="resi">
                                                                 </div>
                                                                 <div class="col-md-2">
-                                                                    <button class="btn btn-success btn-block mt-4">
-                                                                        Update Resi
-                                                                    </button>
+                                                                    <button type="submit"
+                                                                        class="btn btn-success btn-block mt-4">Update
+                                                                        Resi</button>
                                                                 </div>
-                                                            </div>
+                                                            </template>
                                                         </div>
                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-4">
+                                                <div class="col-12 text-right">
+                                                    <button class="btn btn-success mt-4">Save Now</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -239,7 +256,16 @@
             $(this).addClass("active");
         })
     </script>
-    <script src="script/navbar-scroll.js"></script>
+    <script src="/vendor/vue/vue.js"></script>
+    <script>
+        var transactionDetails = new Vue({
+            el: "#transactionDetails",
+            data: {
+                status: "SHIPPING",
+                resi: "BGR121102930"
+            },
+        });
+    </script>
 </body>
 
 </html>
