@@ -11226,6 +11226,13 @@ footer p .footer-logo:hover {
   border-bottom: 2px solid #0C0D36;
 }
 
+.page-dashboard .section-content .gallery-container .delete-gallery {
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
+
 .slide-fade-enter-active {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -11369,5 +11376,27 @@ footer p .footer-logo:hover {
 .card-list .card-body img {
   width: 44px;
   min-height: 44px;
+}
+
+.card-dashboard-product {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card-dashboard-product img {
+  max-height: 160px;
+  border-radius: 8px;
+}
+
+.card-dashboard-product .product-title {
+  font-size: 18px;
+  font-weight: normal;
+  color: #0c0d36;
+}
+
+.card-dashboard-product .product-category {
+  font-size: 16px;
+  font-weight: normal;
+  color: #c5c5c5;
 }
 /*# sourceMappingURL=main.css.map */

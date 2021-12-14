@@ -25,13 +25,13 @@
                     <a href="/dashboard.html" class="list-group-item list-group-item-action ">
                         Dashboard
                     </a>
-                    <a href="/dashboard-products.html" class="list-group-item list-group-item-action">
+                    <a href="/dashboard-products.html" class="list-group-item list-group-item-action active">
                         My Products
                     </a>
                     <a href="/dashboard-transactions.html" class="list-group-item list-group-item-action">
                         Transactions
                     </a>
-                    <a href="/dashboard-settings.html" class="list-group-item list-group-item-action active">
+                    <a href="/dashboard-settings.html" class="list-group-item list-group-item-action ">
                         Store Settings
                     </a>
                     <a href="/dashboard-account.html" class="list-group-item list-group-item-action">
@@ -96,8 +96,8 @@
                 <div class="section-content section-dashboard-home" data-aos="fade-up">
                     <div class="container-fluid">
                         <div class="dashboard-heading">
-                            <h2 class="dashboard-title">Store Settings</h2>
-                            <p class="dashboard-subtitle">Make store that profitable</p>
+                            <h2 class="dashboard-title">Apple Watch 4</h2>
+                            <p class="dashboard-subtitle">Create your own product</p>
                         </div>
                         <div class="dashboard-content">
                             <div class="row">
@@ -108,58 +108,91 @@
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="storeName">Store Name</label>
-                                                            <input type="text" name="storeName" id="storeName"
-                                                                class="form-control" value="Gadgein">
+                                                            <label for="productName">Product Name</label>
+                                                            <input type="text" name="productName" id="productName"
+                                                                class="form-control" value="Apple Watch 4">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="price">Price</label>
+                                                            <input type="number" name="price" id="price"
+                                                                class="form-control" value="Rp. 1,000,000">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-12">
                                                         <div class="form-group">
                                                             <label>Category</label>
                                                             <select name="category" class="form-control">
-                                                                <option value="FURNITURE">
-                                                                    Furniture
+                                                                <option value="">
+                                                                    Select Category
                                                                 </option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-12">
                                                         <div class="form-group">
-                                                            <label>Store Status</label>
-                                                            <p class="text-muted">
-                                                                Apakah saat ini Anda buka?
-                                                            </p>
-                                                            <div
-                                                                class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" class="custom-control-input"
-                                                                    name="is_store_open" id="openStoreTrue" value="true"
-                                                                    checked>
-                                                                <label for="openStoreTrue"
-                                                                    class="custom-control-label">Buka</label>
-                                                            </div>
-                                                            <div
-                                                                class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" class="custom-control-input"
-                                                                    name="is_store_open" id="openStoreFalse"
-                                                                    value="false">
-                                                                <label for="openStoreFalse"
-                                                                    class="custom-control-label">Tutup Sementara</label>
-                                                            </div>
+                                                            <label for="description">Descriptions</label>
+                                                            <textarea class="form-control" name="description"
+                                                                id="description"></textarea>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col text-right">
-                                                        <button class="btn btn-success px-5">Save Now</button>
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-success btn-block px-5">
+                                                            Save Now
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </form>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="gallery-container">
+                                                        <img src="/images/products/pic-1.jpg" alt="" class="w-100">
+                                                        <a href="#" class="delete-gallery">
+                                                            <img src="/images/icons/ic-delete.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="gallery-container">
+                                                        <img src="/images/products/pic-2.jpg" alt="" class="w-100">
+                                                        <a href="#" class="delete-gallery">
+                                                            <img src="/images/icons/ic-delete.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="gallery-container">
+                                                        <img src="/images/products/pic-3.jpg" alt="" class="w-100">
+                                                        <a href="#" class="delete-gallery">
+                                                            <img src="/images/icons/ic-delete.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-3">
+                                                <input type="file" id="file" style="display: none;" multiple>
+                                                <button class="btn btn-secondary btn-block" onclick="thisFileUpload()">
+                                                    Add Photo
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +221,15 @@
             $(this).addClass("active");
         })
     </script>
-    <script src="script/navbar-scroll.js"></script>
+    <script>
+        function thisFileUpload() {
+            document.getElementById('file').click();
+        }
+    </script>
+    <script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('description');
+    </script>
 </body>
 
 </html>

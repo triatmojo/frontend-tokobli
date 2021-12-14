@@ -25,13 +25,13 @@
                     <a href="/dashboard.html" class="list-group-item list-group-item-action ">
                         Dashboard
                     </a>
-                    <a href="/dashboard-products.html" class="list-group-item list-group-item-action">
+                    <a href="/dashboard-products.html" class="list-group-item list-group-item-action active">
                         My Products
                     </a>
                     <a href="/dashboard-transactions.html" class="list-group-item list-group-item-action">
                         Transactions
                     </a>
-                    <a href="/dashboard-settings.html" class="list-group-item list-group-item-action active">
+                    <a href="/dashboard-settings.html" class="list-group-item list-group-item-action ">
                         Store Settings
                     </a>
                     <a href="/dashboard-account.html" class="list-group-item list-group-item-action">
@@ -96,8 +96,8 @@
                 <div class="section-content section-dashboard-home" data-aos="fade-up">
                     <div class="container-fluid">
                         <div class="dashboard-heading">
-                            <h2 class="dashboard-title">Store Settings</h2>
-                            <p class="dashboard-subtitle">Make store that profitable</p>
+                            <h2 class="dashboard-title">Create New Product</h2>
+                            <p class="dashboard-subtitle">Create your own product</p>
                         </div>
                         <div class="dashboard-content">
                             <div class="row">
@@ -108,53 +108,58 @@
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="storeName">Store Name</label>
-                                                            <input type="text" name="storeName" id="storeName"
-                                                                class="form-control" value="Gadgein">
+                                                            <label for="productName">Product Name</label>
+                                                            <input type="text" name="productName" id="productName"
+                                                                class="form-control">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="price">Price</label>
+                                                            <input type="number" name="price" id="price"
+                                                                class="form-control">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-12">
                                                         <div class="form-group">
                                                             <label>Category</label>
                                                             <select name="category" class="form-control">
-                                                                <option value="FURNITURE">
-                                                                    Furniture
+                                                                <option value="">
+                                                                    Select Category
                                                                 </option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label for="description">Descriptions</label>
+                                                            <textarea class="form-control" name="description"
+                                                                id="description"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label>Store Status</label>
-                                                            <p class="text-muted">
-                                                                Apakah saat ini Anda buka?
+                                                            <label for="thumbnail">Thumbnail</label>
+                                                            <input type="file" class="form-control" name="thumbnail"
+                                                                id="thumbnail"></input>
+                                                            <p class="text-muted mt-2">
+                                                                Kamu dapat memilih banyak lebih dari satu file
                                                             </p>
-                                                            <div
-                                                                class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" class="custom-control-input"
-                                                                    name="is_store_open" id="openStoreTrue" value="true"
-                                                                    checked>
-                                                                <label for="openStoreTrue"
-                                                                    class="custom-control-label">Buka</label>
-                                                            </div>
-                                                            <div
-                                                                class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" class="custom-control-input"
-                                                                    name="is_store_open" id="openStoreFalse"
-                                                                    value="false">
-                                                                <label for="openStoreFalse"
-                                                                    class="custom-control-label">Tutup Sementara</label>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col text-right">
-                                                        <button class="btn btn-success px-5">Save Now</button>
+                                                        <button type="submit" class="btn btn-success px-5">
+                                                            Save Now
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -188,7 +193,10 @@
             $(this).addClass("active");
         })
     </script>
-    <script src="script/navbar-scroll.js"></script>
+    <script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('description');
+    </script>
 </body>
 
 </html>
